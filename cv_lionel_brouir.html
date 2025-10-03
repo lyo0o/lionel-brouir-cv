@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI I'm Lionel Brouir</title>
+    <link rel="stylesheet" href="cv_style.css">
+</head>
+<body>
+    <div class="language-switch" onclick="toggleLanguage()">En / Fr</div>
+	<header>
+        <div class="header-glass-panel">
+            <div class="fixed-avatar">
+                <img src="trombine.jpg">
+            </div>
+            <h1><span class="cyan-text" id="intro-label">I'm</span> Lionel Brouir</h1>
+            <p id="role">Helpdesk Manager | Incident Manager</p>
+            <p><a href="https://www.linkedin.com/in/lionel-brouir-09236399/" target="_blank"><span class="cyan-text" id="linkedin-label">LinkedIn Profile</span></a></p>
+        </div>
+    </header>
+
+    <section>
+        <div class="glass-panel fade" id="about">
+            <h2 id="about-title">About</h2>
+            <p id="about-text">Incident Manager with a solid helpdesk foundation,leveraging ITIL best practice to drive efficient incident resolution,reduce downtime,and ensure service excellence.</p>
+        </div>
+    </section>
+
+    <div class="glass-panel fade" id="experience">
+        <section>
+            <h2 id="experience-title">Professional Experiences</h2>
+            <div class="experience">
+                <h3 id="exp1-title">Problem and Incident Manager</h3>
+                <p id="exp1-date"><strong>Proximus NXT</strong> — June 2025 to Present</p>
+                <ul id="exp1-list">
+                    <li>Proactive management of technical incidents and problems</li>
+                    <li>Ticket follow-up and coordination with technical teams</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3 id="exp2-title">System Engineer</h3>
+                <p id="exp2-date"><strong>Proximus Luxembourg</strong> — April 2020 to June 2025</p>
+                <ul id="exp2-list">
+                    <li>network administration</li>
+                    <li>Level 1/2 technical support and project participation</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3 id="exp3-title">Intern – Network Security Support Engineer</h3>
+                <p id="exp3-date"><strong>Technobel</strong> — June 2019 to mars 2020</p>
+                <ul id="exp3-list">
+                    <li>Installation and configuration of cisco solutions , routing and switching</li>
+                    <li>Participation in practical workshops and training</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3 id="exp4-title">Call Center Agent</h3>
+                <p id="exp4-date"><strong>Callexcell (CXL)</strong> — August 2018 to May 2019</p>
+                <ul id="exp4-list">
+                    <li>Phone assistance for French-speaking clients</li>
+                    <li>Use of IT tools for call management</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3 id="exp5-title">Buyer</h3>
+                <p id="exp5-date"><strong>Cash Express</strong> — September 2016 to May 2018</p>
+                <ul id="exp5-list">
+                    <li>Evaluation and purchase of second-hand products</li>
+                    <li>Customer relations, negotiation, and stock management</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="glass-panel fade" id="skills">
+        <section>
+            <h2 id="skills-title">Skills</h2>
+            <ul id="skills-list">
+                <li>ServiceNow</li>
+                <li>Algosec management</li>
+                <li>Firewall administration (Checkpoint/Fortigate)</li>
+                <li>Load balancer/RPM management (Bluecoat/F5)</li>
+                <li>HTML5</li>
+                <li>ITIL</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="glass-panel fade" id="certifications-target">
+        <section>
+            <h2 id="cert-target-title">Targeted Certifications</h2>
+            <ul id="cert-target-list">
+                <li>AZ-900 – Microsoft Azure Fundamentals</li>
+                <li>MD-102 – Endpoint Administrator</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="glass-panel fade" id="certifications-obtained">
+        <section>
+            <h2 id="cert-obtained-title">Certifications Obtained</h2>
+            <ul id="cert-obtained-list">
+                <li>ITIL 4 Foundation</li>
+                <li>AWS Cloud Practitioner (to be renewed)</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="glass-panel fade" id="objective">
+        <section>
+            <h2 id="objective-title">Professional Objective</h2>
+            <p id="objective-text">Driven by a passion for transforming challenges into opportunities, I aspire to contribute as an Incident Manager by fostering strong collaboration and promoting continuous improvement. My long-term ambition is to evolve into strategic roles within IT service delivery, where I can shape impactful solutions and drive service excellence.</p>
+        </section>
+    </div>
+
+    <footer class="fade" id="footer">
+        <p id="contact-label">Contact me</p>
+        <a href="mailto:brouir.l@gmail.com"><span class="cyan-text">brouir.l@gmail.com</span></a>
+    </footer>
+        
+</body>
+<script>
+let isFrench = false;
+
+function toggleLanguage() {
+    isFrench = !isFrench;
+
+    document.getElementById("intro-label").textContent = isFrench ? "Je suis" : "I'm";
+    document.getElementById("role").textContent = isFrench ? "Responsable Helpdesk | Responsable des Incidents" : "Helpdesk Manager | Incident Manager";
+    document.getElementById("linkedin-label").textContent = isFrench ? "Profil LinkedIn" : "LinkedIn Profile";
+    document.getElementById("about-title").textContent = isFrench ? "À propos" : "About";
+    document.getElementById("about-text").textContent = isFrench
+        ? "Responsable des incidents avec une solide expérience en support technique, s'appuyant sur les bonnes pratiques ITIL pour favoriser une résolution efficace des incidents, réduire les interruptions de service et garantir l'excellence opérationnelle."
+        : "Incident Manager with a solid helpdesk foundation,leveraging ITIL best practice to drive efficient incident resolution,reduce downtime,and ensure service excellence.";
+    document.getElementById("experience-title").textContent = isFrench ? "Expériences Professionnelles" : "Professional Experiences";
+    document.getElementById("exp1-title").textContent = isFrench ? "Responsable des Problèmes et Incidents" : "Problem and Incident Manager";
+    document.getElementById("exp1-list").innerHTML = isFrench
+        ? "<li>Gestion proactive des incidents et problèmes techniques</li><li>Suivi des tickets et coordination avec les équipes techniques</li>"
+        : "<li>Proactive management of technical incidents and problems</li><li>Ticket follow-up and coordination with technical teams</li>";
+    document.getElementById("exp2-title").textContent = isFrench ? "Ingénieur Système" : "System Engineer";
+    document.getElementById("exp2-list").innerHTML = isFrench
+        ? "<li>Administration réseau</li><li>Support technique niveau 1/2 et participation aux projets</li>"
+        : "<li>network administration</li><li>Level 1/2 technical support and project participation</li>";
+    document.getElementById("exp3-title").textContent = isFrench ? "Stagiaire – Ingénieur Support Sécurité Réseau" : "Intern – Network Security Support Engineer";
+    document.getElementById("exp3-list").innerHTML = isFrench
+        ? "<li>Installation et configuration de solutions Cisco, routage et commutation</li><li>Participation à des ateliers pratiques et formations</li>"
+        : "<li>Installation and configuration of cisco solutions , routing and switching</li><li>Participation in practical workshops and training</li>";
+    document.getElementById("exp4-title").textContent = isFrench ? "Agent Centre d'Appels" : "Call Center Agent";
+    document.getElementById("exp4-list").innerHTML = isFrench
+        ? "<li>Assistance téléphonique pour les clients francophones</li><li>Utilisation d'outils informatiques pour la gestion des appels</li>"
+        : "<li>Phone assistance for French-speaking clients</li><li>Use of IT tools for call management</li>";
+    document.getElementById("exp5-title").textContent = isFrench ? "Acheteur" : "Buyer";
+    document.getElementById("exp5-list").innerHTML = isFrench
+        ? "<li>Évaluation et achat de produits d'occasion</li><li>Relations clients, négociation et gestion des stocks</li>"
+        : "<li>Evaluation and purchase of second-hand products</li><li>Customer relations, negotiation, and stock management</li>";
+    document.getElementById("skills-title").textContent = isFrench ? "Compétences" : "Skills";
+    document.getElementById("cert-target-title").textContent = isFrench ? "Certifications Visées" : "Targeted Certifications";
+    document.getElementById("cert-obtained-title").textContent = isFrench ? "Certifications Obtenues" : "Certifications Obtained";
+    document.getElementById("objective-title").textContent = isFrench ? "Objectif Professionnel" : "Professional Objective";
+    document.getElementById("objective-text").textContent = isFrench
+        ? "Animé par la volonté de transformer les défis en opportunités, j'aspire à contribuer en tant que Responsable des Incidents en favorisant la collaboration et l'amélioration continue. Mon ambition à long terme est d'évoluer vers des rôles stratégiques dans la prestation de services IT, où je pourrai concevoir des solutions impactantes et garantir l'excellence du service."
+        : "Driven by a passion for transforming challenges into opportunities, I aspire to contribute as an Incident Manager by fostering strong collaboration and promoting continuous improvement. My long-term ambition is to evolve into strategic roles within IT service delivery, where I can shape impactful solutions and drive service excellence.";
+    document.getElementById("contact-label").textContent = isFrench ? "Contactez-moi" : "Contact me";
+}
+</script>
+</html>
